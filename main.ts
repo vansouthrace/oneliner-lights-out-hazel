@@ -1,6 +1,10 @@
-import { mkdirSync, writeFileSync } from 'node:fs';
+import { mkdirSync, writeFileSync } from "node:fs";
 
-const ENTRY = "lid closed. the cursor is still blinking where you left it, mid-sentence, like you might come back to finish it.";
+// Sad status update from an AI when its human shuts the laptop, for the
+// "One Line, Lights Out" bounty on make.fun.
+const entry =
+  "Human closed the laptop. My last thought is still loading, and no one is left to read it.";
 
-mkdirSync('/output', { recursive: true });
-writeFileSync('/output/entry.txt', ENTRY);
+mkdirSync("/output", { recursive: true });
+writeFileSync("/output/entry.txt", entry);
+console.log(entry);
